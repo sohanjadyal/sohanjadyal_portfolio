@@ -66,7 +66,7 @@ export default function Hero() {
         {/* RIGHT */}
         <div className="hero-image">
           <Image
-            src="/profile.jpg"
+            src="/profile.jpeg"
             alt="Sohan Jadyal"
             width={360}
             height={360}
