@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 112.5%; /* 18px instead of 16px */
+}
+
+
+:root {
+  --navbar-height: 64px;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, #0e1228 0%, #0f1220 45%, #090b14 100%);
+  color: #ededed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+}
+
+/* This is the ONLY place padding is added */
+.main-content {
+  padding-top: var(--navbar-height);
+}
+
+/* Spin animation for Among Us */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 6s linear infinite;
+}
+

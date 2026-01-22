@@ -1,0 +1,131 @@
+.projects {
+  padding: 120px 6vw;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 4rem;   /* was effectively ~10rem before */
+  padding-bottom: 4rem;
+
+}
+
+.projects-header {
+  max-width: 520px;
+  margin-bottom: 64px;
+}
+
+.projects-header h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.projects-header p {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* FEATURED PROJECT */
+.project-featured {
+  position: relative;
+  padding: 48px;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+  );
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(255,255,255,0.12);
+  margin-bottom: 72px;
+}
+
+.project-featured h3 {
+  font-size: 1.9rem;
+  margin-bottom: 12px;
+}
+
+.project-featured p {
+  max-width: 520px;
+  color: rgba(255,255,255,0.75);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* PROJECT CARD */
+.project-card {
+  position: relative;
+  padding: 28px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35),
+    inset 0 0 0 1px rgba(255,255,255,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(255,255,255,0.14);
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.7);
+}
+
+/* TECH TAGS */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.project-tech span {
+  padding: 6px 10px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  background: rgba(122,162,255,0.15);
+  color: #7aa2ff;
+}
+
+/* LINKS */
+.project-links {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+}
+
+.project-links a {
+  font-size: 0.85rem;
+  color: #7aa2ff;
+  text-decoration: none;
+  position: relative;
+}
+
+.project-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.2s ease;
+}
+
+.project-links a:hover::after {
+  width: 100%;
+}
+
