@@ -2,28 +2,39 @@ import "../styles/projects.css";
 
 const projects = [
   {
-    title: "Personal Portfolio Website",
-    description:
-      "A responsive developer portfolio showcasing projects, skills, and experience with a strong focus on clean UI and performance.",
-    tech: ["Next.js", "React", "CSS"],
-    github: "#",
-    live: "#",
-    featured: true,
+  title: "Dragon Repeller – RPG Game",
+  description:
+    "A browser-based RPG game inspired by classic Pokémon-style combat. Features turn-based battles, animated characters, weapon progression, and responsive design built with React.",
+  tech: ["React", "JavaScript", "CSS", "Vite", "LocalStorage"],
+  github: "https://github.com/sohanjadyal/RPG_game",
+  live: "https://rpg-game-sigma.vercel.app/",
+  featured: true,
   },
   {
-    title: "Task Management App",
-    description:
-      "A full-stack task management application with authentication and CRUD operations.",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    github: "#",
-  },
+  title: "F1 Race Insights Dashboard",
+  description:
+    "A data-driven Formula 1 analytics dashboard that visualizes race results, lap times, and driver performance using real F1 telemetry data.",
+  tech: [
+    "Python",
+    "FastF1",
+    "Flask",
+    "SQLite",
+    "Plotly"
+  ],
+  github: "https://github.com/sohanjadyal/f1-race-insights",
+  live: "https://f1-race-insights.streamlit.app",
+  featured: true,
+},
   {
-    title: "REST API for Notes",
-    description:
-      "A RESTful API for managing notes with proper validation and error handling.",
-    tech: ["Node.js", "Express", "MongoDB"],
-    github: "#",
-  },
+  title: "Movie Database App",
+  description:
+    "A responsive movie search and discovery web app built using the OMDb API, allowing users to search, filter, and explore movies with real-time data.",
+  tech: ["HTML", "CSS", "JavaScript", "OMDb API"],
+  github: "https://github.com/sohanjadyal/movie_database",
+  live: "https://moviedatabase-murex.vercel.app/",
+  featured: true,
+},
+
 ];
 
 export default function Projects() {
